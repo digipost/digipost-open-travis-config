@@ -8,7 +8,7 @@ This repository contains common config for building open source projects with Tr
 This repository should be included open source repositories like this:
 
 ```shell
-git add submodule https://github.com/digipost/digipost-open-travis-config .travis
+git submodule add https://github.com/digipost/digipost-open-travis-config .travis
 ```
 
 This will create the `.travis/` folder inside your repository, with this repository cloned as a [Git submodule](https://github.blog/2016-02-01-working-with-submodules/). This provides a settings.xml file for Maven which enables Travis CI to resolve snapshots from the Sonatype snapshot repository. The `./travis/maven.settings.xml` file should be provided to the Maven build command which is run on Travis CI.
